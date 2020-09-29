@@ -1,0 +1,189 @@
+body{
+    height: 100vh;
+    background-size: cover;
+    background-position:fixed;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 1;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(./fabio-oyXis2kALVg-unsplash.jpg);   
+}
+header{
+    /* width: 100vh;
+    float: right;
+    margin-top: 12px;
+    padding:10px;*/
+    position: fixed; 
+    float: right;
+    width: 97%;
+    
+}
+a.default{
+    background-color: rgb(94, 152, 228);
+    color:white;
+    background-color: 5px black;
+    /* padding: 15px; */
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    
+}
+header ul li{
+    float: right;
+    background-color: rgb(94, 152, 228);
+    display:block;
+    list-style-type: none;
+    padding: 15px;
+   
+}
+header ul li a:hover{
+    background-color:rgb(28, 42, 48);
+    color:white;    
+}
+.droplist{
+    background-color:rgb(187, 187, 238) ;
+    position: absolute;
+    padding: 10px;
+    display: none;
+}
+.droplist a{
+    padding: 10px;
+    display: block;
+}
+.dropdown:hover .droplist{
+    display: block;
+   
+}
+/* * {
+    box-sizing: border-box;
+  } */
+h3, h2,p{
+    color: azure;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.col{
+    float: left;
+    margin-top: 15vh;
+    width: 30%;
+    padding: 10px;
+}
+.logo img {
+    width: 100px;
+    /* height: auto; */
+    float: left;
+    margin-left: 1%;
+}
+
+
+/*........ login........ */
+.form{
+    margin: 10% 30% 0% 40%;
+    text-align: center;
+    width: 300px;
+    border:  rgb(91, 148, 194) 2px solid;
+    border-radius: 15px;
+    
+}
+#h2{
+    color: rgb(231, 234, 238)
+}
+input[type='text'],input[type='password']{
+    height: 29px;
+    text-align: center;
+    margin:  7px;
+    font-size: 15px;
+    border-radius: 9px;
+    border:2px solid grey;
+
+}
+input[type='submit']{
+    margin:  7px;
+    height: 35px;
+    width: 12vh;
+    font-size: 17px;    
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    border:1px  solid rgb(205, 199, 709);
+    background-color: rgb(125, 146, 230);
+}
+input[type='text']:focus,
+    input[type='password']:focus{
+    outline: none; 
+    background-color:rgb(241, 244, 245) ;
+}
+input[type='submit']:focus{
+    outline: none;
+    border-radius:  9px;
+    border-color:  rgb(54, 115, 206);
+    cursor: pointer;
+    box-shadow: 0px 2px 2px   rgb(80, 80, 189);
+    
+}  
+
+/* ..........image...... */
+
+h1{
+    text-align: center;
+    color: white;
+    padding-top: 20vh;
+}
+
+.image{
+   width: 400px;
+   /* height: 280px; */
+   border: 2px solid rgb(245, 240, 240);
+   border-radius: 12px;
+   float: left;
+   padding: 20px;
+   text-align: center;
+   margin: 30px;
+}
+.image:hover{
+    box-shadow: 10px 10px 03px rgb(233, 233, 238);
+}
+.zoom{
+    width:400px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px ;
+}
+.zoom:hover{
+    box-shadow: 5px 5px 3px rgb(228, 223, 223);
+}
+.zoom img{
+    max-width: 100%;
+    max-height: 100%;
+    transition:all 1s;
+    border-radius: 10px;
+    cursor:pointer;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+} 
+.desc{
+    color: white;
+    padding: 10px;    
+}
+
+@media screen and (max-width: 600px) {
+    .col {
+     width: 98%;     
+   }
+   header{
+       width: 99%;       
+   }
+   .form{
+       margin:20%;
+   }
+   .logo img{
+       width: 90px;   
+   }
+   .image{
+       padding:10px ;
+   }
+}
